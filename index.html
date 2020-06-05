@@ -6,7 +6,7 @@
       <meta name="Vikkey" content="Vivek Gupta & IoTMonk">
 	  <meta http-equiv="Access-Control-Allow-Origin" content="*">
      
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
       <title>IoT Demo</title></head>
       <style type="text/css">
@@ -55,7 +55,7 @@
     <script>
 		document.getElementById('D1-on').addEventListener('click', function() {
 				var ip = document.getElementById('ip').value;
-				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=1"
+				var url = "https://api.thingspeak.com/update?api_key="+ ip + "&field1=1"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
@@ -63,7 +63,7 @@
 		
 		document.getElementById('D1-off').addEventListener('click', function() {
 				var ip = document.getElementById('ip').value;
-				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
+				var url = "https://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
 				$.getJSON(url, function(data) {
 					console.log(data);
 				});
